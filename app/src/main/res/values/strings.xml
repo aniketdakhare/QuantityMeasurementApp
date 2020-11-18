@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Quantity Measurement</string>
+    <string name="quantity_measurement">Quantity Measurement</string>
+    <string name="add_quantities">Add quantities</string>
+    <string name="convert_quantity">Convert Quantity</string>
+    <string name="quantity">Select the Quantity</string>
+    <string name="hintValue">0.0</string>
+    <string name="plus">+</string>
+    <string name="equal">=</string>
+
+    <string-array name="quantityType">
+        <item>Length</item>
+        <item>Weight</item>
+        <item>Volume</item>
+        <item>Temperature</item>
+    </string-array>
+</resources>

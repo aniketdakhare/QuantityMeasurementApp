@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="addableQuantity">
+        <item>Length</item>
+        <item>Weight</item>
+        <item>Volume</item>
+    </string-array>
+
+    <string-array name="length">
+        <item>INCH</item>
+        <item>FEET</item>
+        <item>YARD</item>
+        <item>CENTIMETER</item>
+    </string-array>
+
+    <string-array name="weight">
+        <item>KILOGRAM</item>
+        <item>GRAM</item>
+        <item>TONNE</item>
+    </string-array>
+
+    <string-array name="temp">
+        <item>CELSIUS</item>
+        <item>FAHRENHEIT</item>
+    </string-array>
+
+    <string-array name="volume">
+        <item>GALLON</item>
+        <item>LITRE</item>
+        <item>MILLILITRE</item>
+    </string-array>
+</resources>

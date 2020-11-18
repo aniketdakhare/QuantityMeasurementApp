@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.ConvertQuantityFragment">
+
+    <Spinner
+        android:id="@+id/quantity"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:background="@android:drawable/btn_dropdown"
+        android:entries="@array/addableQuantity"
+        android:prompt="@string/quantity"
+        app:layout_constraintBottom_toTopOf="@+id/firstValue"
+        app:layout_constraintEnd_toEndOf="@+id/resultValue"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/firstValue"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <EditText
+        android:id="@+id/firstValue"
+        android:layout_width="100sp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="40dp"
+        android:ems="10"
+        android:hint="@string/hintValue"
+        android:textAlignment="center"
+        android:inputType="number"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/addSign"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/quantity"
+        android:gravity="center_horizontal" />
+
+    <Spinner
+        android:id="@+id/firstUnit"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/firstValue"
+        app:layout_constraintStart_toStartOf="@+id/firstValue"
+        app:layout_constraintTop_toBottomOf="@+id/firstValue"
+        android:background="@android:drawable/btn_dropdown"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/addSign"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:text="@string/plus"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/firstValue"
+        app:layout_constraintEnd_toStartOf="@+id/secondValue"
+        app:layout_constraintHorizontal_bias="0.50"
+        app:layout_constraintStart_toEndOf="@+id/firstValue" />
+
+    <EditText
+        android:id="@+id/secondValue"
+        android:layout_width="100sp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/hintValue"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/addSign"
+        app:layout_constraintEnd_toStartOf="@+id/equalsSign"
+        app:layout_constraintStart_toEndOf="@id/addSign"
+        android:gravity="center_horizontal" />
+
+    <Spinner
+        android:id="@+id/secondUnit"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/secondValue"
+        app:layout_constraintStart_toStartOf="@+id/secondValue"
+        app:layout_constraintTop_toBottomOf="@+id/secondValue"
+        android:background="@android:drawable/btn_dropdown"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/equalsSign"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:text="@string/equal"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/secondValue"
+        app:layout_constraintEnd_toStartOf="@+id/resultValue"
+        app:layout_constraintHorizontal_bias="0.55"
+        app:layout_constraintStart_toEndOf="@+id/secondValue" />
+
+    <EditText
+        android:id="@+id/resultValue"
+        android:layout_width="100sp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:clickable="false"
+        android:ems="10"
+        android:focusable="false"
+        android:hint="@string/hintValue"
+        android:textAlignment="center"
+        android:inputType="number"
+        android:longClickable="false"
+        android:selectAllOnFocus="false"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/equalsSign"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/equalsSign"
+        android:gravity="center_horizontal" />
+
+    <Spinner
+        android:id="@+id/resultUnit"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/resultValue"
+        app:layout_constraintStart_toStartOf="@+id/resultValue"
+        app:layout_constraintTop_toBottomOf="@+id/resultValue"
+        android:background="@android:drawable/btn_dropdown"
+        app:layout_constraintVertical_bias="0.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
