@@ -1,4 +1,4 @@
-    package com.example.quantitymeasurement.model.enums
+    package com.example.quantitymeasurement.quantity_operation.model.enums
 
 enum class UnitType(val unitValue: Double, val conversionFactor: Double, val quantityType: QuantityType) {
     INCH(1.0, 1.0, QuantityType.LENGTH),

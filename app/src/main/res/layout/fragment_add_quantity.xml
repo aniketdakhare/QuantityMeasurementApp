@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".view.ConvertQuantityFragment">
+    tools:context=".quantity_operation.convert_quantity.view.ConvertQuantityFragment">
 
     <Spinner
         android:id="@+id/quantity"
